@@ -1,4 +1,4 @@
-
+#큐를 이용한 그리디 알고리즘 해결
 import heapq
 def solution(food_times, k):
     
