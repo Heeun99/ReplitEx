@@ -1,11 +1,11 @@
-import numpy as np
-
 n = int(input())
 
-A = np.array([list(map(int, input().split()))])
-B = np.array([list(map(int, input().split()))])
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
 
-AA = np.sort(A)
-BB = np.sort(B)[::-1]
+A.sort()
+B.sort(reverse=True)
 
+result = [x*y for x,y in zip(A,B)]
 
+print(sum(result))
