@@ -1,10 +1,12 @@
 n = int(input())
 arr = []
-answer = [0 for _in range(1000)]
+answer = [0]*1000
+          
 for i in range(n):
   a,b = map(int, input().split())
   arr.append([a,b])
 
+#점수를 기준으로 내림차순 정렬
 arr.sort(reverse=True,key = lambda x : x[1])
 
 for i in range(n):
